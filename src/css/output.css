@@ -181,6 +181,9 @@
   .static {
     position: static;
   }
+  .sticky {
+    position: sticky;
+  }
   .container {
     width: 100%;
     @media (width >= 162px) {
@@ -292,9 +295,6 @@
   .h-24\.5 {
     height: calc(var(--spacing) * 24.5);
   }
-  .h-69\.25 {
-    height: calc(var(--spacing) * 69.25);
-  }
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
@@ -343,8 +343,8 @@
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
-  .w-180 {
-    width: calc(var(--spacing) * 180);
+  .w-176 {
+    width: calc(var(--spacing) * 176);
   }
   .w-fit {
     width: fit-content;
@@ -352,8 +352,17 @@
   .w-full {
     width: 100%;
   }
+  .max-w-400 {
+    max-width: calc(var(--spacing) * 400);
+  }
   .max-w-450 {
     max-width: calc(var(--spacing) * 450);
+  }
+  .max-w-500 {
+    max-width: calc(var(--spacing) * 500);
+  }
+  .shrink-0 {
+    flex-shrink: 0;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -411,6 +420,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-28 {
+    gap: calc(var(--spacing) * 28);
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
@@ -482,9 +494,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .object-fill {
-    object-fit: fill;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -650,6 +659,10 @@
   .underline {
     text-decoration-line: underline;
   }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .ring-2 {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -661,8 +674,21 @@
     --tw-ring-offset-width: 2px;
     --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   }
+  .blur {
+    --tw-blur: blur(8px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .invert {
+    --tw-invert: invert(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -1190,9 +1216,6 @@
     .desktop\:h-162 {
       height: calc(var(--spacing) * 162);
     }
-    .desktop\:h-165 {
-      height: calc(var(--spacing) * 165);
-    }
     .desktop\:h-200\.75 {
       height: calc(var(--spacing) * 200.75);
     }
@@ -1238,6 +1261,9 @@
     .desktop\:w-full {
       width: 100%;
     }
+    .desktop\:max-w-400 {
+      max-width: calc(var(--spacing) * 400);
+    }
     .desktop\:max-w-450 {
       max-width: calc(var(--spacing) * 450);
     }
@@ -1271,8 +1297,14 @@
     .desktop\:gap-6 {
       gap: calc(var(--spacing) * 6);
     }
+    .desktop\:gap-44 {
+      gap: calc(var(--spacing) * 44);
+    }
     .desktop\:gap-x-6 {
       column-gap: calc(var(--spacing) * 6);
+    }
+    .desktop\:gap-x-16 {
+      column-gap: calc(var(--spacing) * 16);
     }
     .desktop\:gap-y-0 {
       row-gap: 0px;
