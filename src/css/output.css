@@ -355,9 +355,6 @@
   .max-w-400 {
     max-width: calc(var(--spacing) * 400);
   }
-  .max-w-450 {
-    max-width: calc(var(--spacing) * 450);
-  }
   .max-w-500 {
     max-width: calc(var(--spacing) * 500);
   }
@@ -420,9 +417,6 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
-  }
-  .gap-28 {
-    gap: calc(var(--spacing) * 28);
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
@@ -975,9 +969,6 @@
     .mobile\:h-30 {
       height: calc(var(--spacing) * 30);
     }
-    .mobile\:h-34\.5 {
-      height: calc(var(--spacing) * 34.5);
-    }
     .mobile\:h-35 {
       height: calc(var(--spacing) * 35);
     }
@@ -1204,6 +1195,9 @@
     .desktop\:h-22 {
       height: calc(var(--spacing) * 22);
     }
+    .desktop\:h-34\.5 {
+      height: calc(var(--spacing) * 34.5);
+    }
     .desktop\:h-91\.5 {
       height: calc(var(--spacing) * 91.5);
     }
@@ -1264,8 +1258,8 @@
     .desktop\:max-w-400 {
       max-width: calc(var(--spacing) * 400);
     }
-    .desktop\:max-w-450 {
-      max-width: calc(var(--spacing) * 450);
+    .desktop\:max-w-430 {
+      max-width: calc(var(--spacing) * 430);
     }
     .desktop\:flex-col {
       flex-direction: column;
@@ -1305,6 +1299,9 @@
     }
     .desktop\:gap-x-16 {
       column-gap: calc(var(--spacing) * 16);
+    }
+    .desktop\:gap-x-28 {
+      column-gap: calc(var(--spacing) * 28);
     }
     .desktop\:gap-y-0 {
       row-gap: 0px;
